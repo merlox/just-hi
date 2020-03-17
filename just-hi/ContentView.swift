@@ -10,7 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        let salutes = [
+            "Have an amazing day today!",
+            "Today is going to be amazing",
+            "Enjoy every second because it's unique"
+        ]
+        let myNumber = Int.random(in: 0..<salutes.count)
+        return VStack {
+            Text("Hello")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.bottom, 40.0)
+            Text(salutes[myNumber])
+                .font(.headline)
+        }
     }
 }
 
