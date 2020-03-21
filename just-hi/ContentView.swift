@@ -12,8 +12,14 @@ struct ContentView: View {
     var body: some View {
         let salutes = [
             "Have an amazing day today!",
-            "Today is going to be amazing",
-            "Enjoy every second because it's unique"
+            "Today is going to be amazing.",
+            "Enjoy every second because it's unique.",
+            "Think long term to build permanent happiness.",
+            "Enjoy the daily actions because they are unique.",
+            "Continue learning 10 minutes everyday to create massive change in your life.",
+            "This is the day you make a difference.",
+            "Your tomorrow self will thank you for today's sacrifices.",
+            "Progress never ends.",
         ]
         let myNumber = Int.random(in: 0..<salutes.count)
         return VStack {
@@ -21,8 +27,10 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(.bottom, 40.0)
+                .frame(width: 300.0)
             Text(salutes[myNumber])
                 .font(.headline)
+                .multilineTextAlignment(.center)
         }
     }
 }
