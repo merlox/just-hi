@@ -1,6 +1,6 @@
 //
-//  just_hiTests.swift
-//  just-hiTests
+//  MinimalisticMotivationTests.swift
+//  MinimalisticMotivationTests
 //
 //  Created by Merunas Grincalaitis on 17/03/2020.
 //  Copyright © 2020 Merunas Grincalaitis. All rights reserved.

@@ -12,7 +12,6 @@
 		961BBA1F242047320046D864 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA1E242047320046D864 /* ContentView.swift */; };
 		961BBA21242047340046D864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961BBA20242047340046D864 /* Assets.xcassets */; };
 		961BBA24242047340046D864 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961BBA23242047340046D864 /* Preview Assets.xcassets */; };
-		961BBA27242047340046D864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961BBA25242047340046D864 /* LaunchScreen.storyboard */; };
 		961BBA32242047340046D864 /* MinimalisticMotivationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA31242047340046D864 /* MinimalisticMotivationTests.swift */; };
 		961BBA3D242047340046D864 /* MinimalisticMotivationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA3C242047340046D864 /* MinimalisticMotivationUITests.swift */; };
 		96FC567E2427D07F0042522C /* MyUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC567D2427D07F0042522C /* MyUtilities.swift */; };
@@ -43,7 +42,6 @@
 		961BBA1E242047320046D864 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		961BBA20242047340046D864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		961BBA23242047340046D864 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		961BBA26242047340046D864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		961BBA28242047340046D864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		961BBA2D242047340046D864 /* MinimalisticMotivationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalisticMotivationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		961BBA31242047340046D864 /* MinimalisticMotivationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalisticMotivationTests.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				961BBA1C242047320046D864 /* SceneDelegate.swift */,
 				961BBA1E242047320046D864 /* ContentView.swift */,
 				961BBA20242047340046D864 /* Assets.xcassets */,
-				961BBA25242047340046D864 /* LaunchScreen.storyboard */,
 				961BBA28242047340046D864 /* Info.plist */,
 				961BBA22242047340046D864 /* Preview Content */,
 				96FC567D2427D07F0042522C /* MyUtilities.swift */,
@@ -248,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961BBA27242047340046D864 /* LaunchScreen.storyboard in Resources */,
 				961BBA24242047340046D864 /* Preview Assets.xcassets in Resources */,
 				961BBA21242047340046D864 /* Assets.xcassets in Resources */,
 			);
@@ -313,17 +309,6 @@
 			targetProxy = 961BBA39242047340046D864 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		961BBA25242047340046D864 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				961BBA26242047340046D864 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		961BBA3F242047340046D864 /* Debug */ = {
@@ -489,14 +474,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77D32S22ZZ;
-				INFOPLIST_FILE = "just-hiTests/Info.plist";
+				INFOPLIST_FILE = MinimalisticMotivationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.merunas.just-hiTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.merunas.MinimalisticMotivationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -511,14 +496,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77D32S22ZZ;
-				INFOPLIST_FILE = "just-hiTests/Info.plist";
+				INFOPLIST_FILE = MinimalisticMotivationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.merunas.just-hiTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.merunas.MinimalisticMotivationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,13 +517,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77D32S22ZZ;
-				INFOPLIST_FILE = "just-hiUITests/Info.plist";
+				INFOPLIST_FILE = MinimalisticMotivationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.merunas.just-hiUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.merunas.MinimalisticMotivationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,13 +537,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77D32S22ZZ;
-				INFOPLIST_FILE = "just-hiUITests/Info.plist";
+				INFOPLIST_FILE = MinimalisticMotivationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.merunas.just-hiUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.merunas.MinimalisticMotivationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

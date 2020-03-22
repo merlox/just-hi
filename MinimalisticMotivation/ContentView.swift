@@ -38,7 +38,12 @@ struct ContentView: View {
     
     func initialScreen() -> AnyView {
         return AnyView(VStack {
-            Text("Sup")
+            Text("Receive a unique motivational message straight to your phone notifications at 8am everyday. You can disable this feature later on.")
+            Button(action: {
+                print("Clicked")
+            }) {
+                Text("Enable notifications")
+            }
         })
     }
 }

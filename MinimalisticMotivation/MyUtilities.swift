@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  MyUtilities.swift
 //  just-hi
 //
 //  Created by Merunas Grincalaitis on 22/03/2020.
