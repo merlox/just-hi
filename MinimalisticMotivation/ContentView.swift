@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+let utilities = MyUtilities()
+
 struct ContentView: View {
     var body: some View {
         let salutes = [
@@ -32,6 +34,12 @@ struct ContentView: View {
                 .font(.headline)
                 .multilineTextAlignment(.center)
         }
+    }
+    
+    func initialScreen() -> AnyView {
+        return AnyView(VStack {
+            Text("Sup")
+        })
     }
 }
 

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:just-hi.xcodeproj">
+      location = "self:/Users/merunas/Desktop/minimalistic-motivation/MinimalisticMotivation.xcodeproj">
    </FileRef>
 </Workspace>

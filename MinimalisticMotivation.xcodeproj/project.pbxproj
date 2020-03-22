@@ -13,8 +13,10 @@
 		961BBA21242047340046D864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961BBA20242047340046D864 /* Assets.xcassets */; };
 		961BBA24242047340046D864 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961BBA23242047340046D864 /* Preview Assets.xcassets */; };
 		961BBA27242047340046D864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961BBA25242047340046D864 /* LaunchScreen.storyboard */; };
-		961BBA32242047340046D864 /* just_hiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA31242047340046D864 /* just_hiTests.swift */; };
-		961BBA3D242047340046D864 /* just_hiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA3C242047340046D864 /* just_hiUITests.swift */; };
+		961BBA32242047340046D864 /* MinimalisticMotivationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA31242047340046D864 /* MinimalisticMotivationTests.swift */; };
+		961BBA3D242047340046D864 /* MinimalisticMotivationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA3C242047340046D864 /* MinimalisticMotivationUITests.swift */; };
+		96FC567E2427D07F0042522C /* MyUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC567D2427D07F0042522C /* MyUtilities.swift */; };
+		96FC56802427EA080042522C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC567F2427EA080042522C /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		961BBA17242047320046D864 /* just-hi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "just-hi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		961BBA17242047320046D864 /* MinimalisticMotivation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimalisticMotivation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		961BBA1A242047320046D864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		961BBA1C242047320046D864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		961BBA1E242047320046D864 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,12 +45,15 @@
 		961BBA23242047340046D864 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		961BBA26242047340046D864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		961BBA28242047340046D864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		961BBA2D242047340046D864 /* just-hiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "just-hiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		961BBA31242047340046D864 /* just_hiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = just_hiTests.swift; sourceTree = "<group>"; };
+		961BBA2D242047340046D864 /* MinimalisticMotivationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalisticMotivationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961BBA31242047340046D864 /* MinimalisticMotivationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalisticMotivationTests.swift; sourceTree = "<group>"; };
 		961BBA33242047340046D864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		961BBA38242047340046D864 /* just-hiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "just-hiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		961BBA3C242047340046D864 /* just_hiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = just_hiUITests.swift; sourceTree = "<group>"; };
+		961BBA38242047340046D864 /* MinimalisticMotivationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalisticMotivationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961BBA3C242047340046D864 /* MinimalisticMotivationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalisticMotivationUITests.swift; sourceTree = "<group>"; };
 		961BBA3E242047340046D864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96AE2B7C24240FDC0052157D /* MinimalisticMotivation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MinimalisticMotivation.entitlements; sourceTree = "<group>"; };
+		96FC567D2427D07F0042522C /* MyUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtilities.swift; sourceTree = "<group>"; };
+		96FC567F2427EA080042522C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +84,9 @@
 		961BBA0E242047320046D864 = {
 			isa = PBXGroup;
 			children = (
-				961BBA19242047320046D864 /* just-hi */,
-				961BBA30242047340046D864 /* just-hiTests */,
-				961BBA3B242047340046D864 /* just-hiUITests */,
+				961BBA19242047320046D864 /* MinimalisticMotivation */,
+				961BBA30242047340046D864 /* MinimalisticMotivationTests */,
+				961BBA3B242047340046D864 /* MinimalisticMotivationUITests */,
 				961BBA18242047320046D864 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,16 +94,17 @@
 		961BBA18242047320046D864 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				961BBA17242047320046D864 /* just-hi.app */,
-				961BBA2D242047340046D864 /* just-hiTests.xctest */,
-				961BBA38242047340046D864 /* just-hiUITests.xctest */,
+				961BBA17242047320046D864 /* MinimalisticMotivation.app */,
+				961BBA2D242047340046D864 /* MinimalisticMotivationTests.xctest */,
+				961BBA38242047340046D864 /* MinimalisticMotivationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		961BBA19242047320046D864 /* just-hi */ = {
+		961BBA19242047320046D864 /* MinimalisticMotivation */ = {
 			isa = PBXGroup;
 			children = (
+				96AE2B7C24240FDC0052157D /* MinimalisticMotivation.entitlements */,
 				961BBA1A242047320046D864 /* AppDelegate.swift */,
 				961BBA1C242047320046D864 /* SceneDelegate.swift */,
 				961BBA1E242047320046D864 /* ContentView.swift */,
@@ -106,8 +112,10 @@
 				961BBA25242047340046D864 /* LaunchScreen.storyboard */,
 				961BBA28242047340046D864 /* Info.plist */,
 				961BBA22242047340046D864 /* Preview Content */,
+				96FC567D2427D07F0042522C /* MyUtilities.swift */,
+				96FC567F2427EA080042522C /* Storage.swift */,
 			);
-			path = "just-hi";
+			path = MinimalisticMotivation;
 			sourceTree = "<group>";
 		};
 		961BBA22242047340046D864 /* Preview Content */ = {
@@ -118,30 +126,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		961BBA30242047340046D864 /* just-hiTests */ = {
+		961BBA30242047340046D864 /* MinimalisticMotivationTests */ = {
 			isa = PBXGroup;
 			children = (
-				961BBA31242047340046D864 /* just_hiTests.swift */,
+				961BBA31242047340046D864 /* MinimalisticMotivationTests.swift */,
 				961BBA33242047340046D864 /* Info.plist */,
 			);
-			path = "just-hiTests";
+			path = MinimalisticMotivationTests;
 			sourceTree = "<group>";
 		};
-		961BBA3B242047340046D864 /* just-hiUITests */ = {
+		961BBA3B242047340046D864 /* MinimalisticMotivationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				961BBA3C242047340046D864 /* just_hiUITests.swift */,
+				961BBA3C242047340046D864 /* MinimalisticMotivationUITests.swift */,
 				961BBA3E242047340046D864 /* Info.plist */,
 			);
-			path = "just-hiUITests";
+			path = MinimalisticMotivationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		961BBA16242047320046D864 /* just-hi */ = {
+		961BBA16242047320046D864 /* MinimalisticMotivation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 961BBA41242047340046D864 /* Build configuration list for PBXNativeTarget "just-hi" */;
+			buildConfigurationList = 961BBA41242047340046D864 /* Build configuration list for PBXNativeTarget "MinimalisticMotivation" */;
 			buildPhases = (
 				961BBA13242047320046D864 /* Sources */,
 				961BBA14242047320046D864 /* Frameworks */,
@@ -151,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = "just-hi";
+			name = MinimalisticMotivation;
 			productName = "just-hi";
-			productReference = 961BBA17242047320046D864 /* just-hi.app */;
+			productReference = 961BBA17242047320046D864 /* MinimalisticMotivation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		961BBA2C242047340046D864 /* just-hiTests */ = {
+		961BBA2C242047340046D864 /* MinimalisticMotivationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 961BBA44242047340046D864 /* Build configuration list for PBXNativeTarget "just-hiTests" */;
+			buildConfigurationList = 961BBA44242047340046D864 /* Build configuration list for PBXNativeTarget "MinimalisticMotivationTests" */;
 			buildPhases = (
 				961BBA29242047340046D864 /* Sources */,
 				961BBA2A242047340046D864 /* Frameworks */,
@@ -169,14 +177,14 @@
 			dependencies = (
 				961BBA2F242047340046D864 /* PBXTargetDependency */,
 			);
-			name = "just-hiTests";
+			name = MinimalisticMotivationTests;
 			productName = "just-hiTests";
-			productReference = 961BBA2D242047340046D864 /* just-hiTests.xctest */;
+			productReference = 961BBA2D242047340046D864 /* MinimalisticMotivationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		961BBA37242047340046D864 /* just-hiUITests */ = {
+		961BBA37242047340046D864 /* MinimalisticMotivationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 961BBA47242047340046D864 /* Build configuration list for PBXNativeTarget "just-hiUITests" */;
+			buildConfigurationList = 961BBA47242047340046D864 /* Build configuration list for PBXNativeTarget "MinimalisticMotivationUITests" */;
 			buildPhases = (
 				961BBA34242047340046D864 /* Sources */,
 				961BBA35242047340046D864 /* Frameworks */,
@@ -187,9 +195,9 @@
 			dependencies = (
 				961BBA3A242047340046D864 /* PBXTargetDependency */,
 			);
-			name = "just-hiUITests";
+			name = MinimalisticMotivationUITests;
 			productName = "just-hiUITests";
-			productReference = 961BBA38242047340046D864 /* just-hiUITests.xctest */;
+			productReference = 961BBA38242047340046D864 /* MinimalisticMotivationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +223,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 961BBA12242047320046D864 /* Build configuration list for PBXProject "just-hi" */;
+			buildConfigurationList = 961BBA12242047320046D864 /* Build configuration list for PBXProject "MinimalisticMotivation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,9 +236,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				961BBA16242047320046D864 /* just-hi */,
-				961BBA2C242047340046D864 /* just-hiTests */,
-				961BBA37242047340046D864 /* just-hiUITests */,
+				961BBA16242047320046D864 /* MinimalisticMotivation */,
+				961BBA2C242047340046D864 /* MinimalisticMotivationTests */,
+				961BBA37242047340046D864 /* MinimalisticMotivationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				961BBA1B242047320046D864 /* AppDelegate.swift in Sources */,
+				96FC567E2427D07F0042522C /* MyUtilities.swift in Sources */,
 				961BBA1D242047320046D864 /* SceneDelegate.swift in Sources */,
 				961BBA1F242047320046D864 /* ContentView.swift in Sources */,
+				96FC56802427EA080042522C /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961BBA32242047340046D864 /* just_hiTests.swift in Sources */,
+				961BBA32242047340046D864 /* MinimalisticMotivationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961BBA3D242047340046D864 /* just_hiUITests.swift in Sources */,
+				961BBA3D242047340046D864 /* MinimalisticMotivationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +304,12 @@
 /* Begin PBXTargetDependency section */
 		961BBA2F242047340046D864 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 961BBA16242047320046D864 /* just-hi */;
+			target = 961BBA16242047320046D864 /* MinimalisticMotivation */;
 			targetProxy = 961BBA2E242047340046D864 /* PBXContainerItemProxy */;
 		};
 		961BBA3A242047340046D864 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 961BBA16242047320046D864 /* just-hi */;
+			target = 961BBA16242047320046D864 /* MinimalisticMotivation */;
 			targetProxy = 961BBA39242047340046D864 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,17 +444,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MinimalisticMotivation/MinimalisticMotivation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"just-hi/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MinimalisticMotivation/Preview Content\"";
 				DEVELOPMENT_TEAM = 77D32S22ZZ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "just-hi/Info.plist";
+				INFOPLIST_FILE = MinimalisticMotivation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.merunas.just-hi";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.merunas.MinimalisticMotivation;
+				PRODUCT_NAME = MinimalisticMotivation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,17 +465,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MinimalisticMotivation/MinimalisticMotivation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"just-hi/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MinimalisticMotivation/Preview Content\"";
 				DEVELOPMENT_TEAM = 77D32S22ZZ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "just-hi/Info.plist";
+				INFOPLIST_FILE = MinimalisticMotivation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.merunas.just-hi";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.merunas.MinimalisticMotivation;
+				PRODUCT_NAME = MinimalisticMotivation;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,7 +500,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/just-hi.app/just-hi";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimalisticMotivation.app/MinimalisticMotivation";
 			};
 			name = Debug;
 		};
@@ -510,7 +522,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/just-hi.app/just-hi";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimalisticMotivation.app/MinimalisticMotivation";
 			};
 			name = Release;
 		};
@@ -557,7 +569,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		961BBA12242047320046D864 /* Build configuration list for PBXProject "just-hi" */ = {
+		961BBA12242047320046D864 /* Build configuration list for PBXProject "MinimalisticMotivation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				961BBA3F242047340046D864 /* Debug */,
@@ -566,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		961BBA41242047340046D864 /* Build configuration list for PBXNativeTarget "just-hi" */ = {
+		961BBA41242047340046D864 /* Build configuration list for PBXNativeTarget "MinimalisticMotivation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				961BBA42242047340046D864 /* Debug */,
@@ -575,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		961BBA44242047340046D864 /* Build configuration list for PBXNativeTarget "just-hiTests" */ = {
+		961BBA44242047340046D864 /* Build configuration list for PBXNativeTarget "MinimalisticMotivationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				961BBA45242047340046D864 /* Debug */,
@@ -584,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		961BBA47242047340046D864 /* Build configuration list for PBXNativeTarget "just-hiUITests" */ = {
+		961BBA47242047340046D864 /* Build configuration list for PBXNativeTarget "MinimalisticMotivationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				961BBA48242047340046D864 /* Debug */,

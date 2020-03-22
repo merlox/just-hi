@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import just_hi
+@testable import MinimalisticMotivation
 
-class just_hiTests: XCTestCase {
+class MinimalisticMotivationTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
