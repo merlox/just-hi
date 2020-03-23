@@ -12,6 +12,46 @@ let utilities = MyUtilities()
 
 struct ContentView: View {
     var body: some View {
+        return initialScreen()
+    }
+    
+    func initialScreen() -> AnyView {
+        return AnyView(VStack {
+            Spacer()
+            Text("Welcome")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+            Spacer()
+            Text("Receive a unique motivational message straight to your phone notifications at 8am everyday. You can disable this feature later on.")
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: 300)
+                .padding(50)
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer()
+            Button(action: {
+                utilities.askNotificationsPermission()
+            }) {
+                Text("Enable notifications")
+                    .padding(20)
+                    .frame(minWidth: 300)
+                    .background(Color.accentColor)
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+            }
+            Button(action: {
+                print("Clicked")
+            }) {
+                Text("I don't want to be notified")
+                    .padding(.top, 20)
+                    .padding(.bottom, 20)
+                    .frame(minWidth: 300)
+            }
+            Spacer()
+        })
+    }
+    
+    func homeScreen() -> AnyView {
         let salutes = [
             "Have an amazing day today!",
             "Today is going to be amazing.",
@@ -24,7 +64,7 @@ struct ContentView: View {
             "Progress never ends.",
         ]
         let myNumber = Int.random(in: 0..<salutes.count)
-        return VStack {
+        return AnyView(VStack {
             Text("Hello")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -33,17 +73,6 @@ struct ContentView: View {
             Text(salutes[myNumber])
                 .font(.headline)
                 .multilineTextAlignment(.center)
-        }
-    }
-    
-    func initialScreen() -> AnyView {
-        return AnyView(VStack {
-            Text("Receive a unique motivational message straight to your phone notifications at 8am everyday. You can disable this feature later on.")
-            Button(action: {
-                print("Clicked")
-            }) {
-                Text("Enable notifications")
-            }
         })
     }
 }
