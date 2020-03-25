@@ -10,14 +10,22 @@ import UserNotifications
 
 class MyUtilities {
     let current = UNUserNotificationCenter.current()
+    var shownInitialPermissionsMessage: Bool
+    var notificationsAccepted: Bool
+    
+    init(_ shownInitialPermissionsMessage: Bool?, _ notificationsAccepted: Bool?) {
+        self.shownInitialPermissionsMessage = shownInitialPermissionsMessage ?? false
+        self.notificationsAccepted = notificationsAccepted ?? false
+    }
     
     func askNotificationsPermission() {
         // 1. Ask for permission
         current.requestAuthorization(options: [.alert, .sound, .badge]) { (granted: Bool, err: Error?) in
+            self.shownInitialPermissionsMessage = true
             if !granted {
-                print("Permission NOT granted")
+                self.notificationsAccepted = false
             } else {
-                print("Permission granted")
+                self.notificationsAccepted = true
             }
         }
     }

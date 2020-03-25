@@ -14,6 +14,8 @@
 		961BBA24242047340046D864 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961BBA23242047340046D864 /* Preview Assets.xcassets */; };
 		961BBA32242047340046D864 /* MinimalisticMotivationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA31242047340046D864 /* MinimalisticMotivationTests.swift */; };
 		961BBA3D242047340046D864 /* MinimalisticMotivationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA3C242047340046D864 /* MinimalisticMotivationUITests.swift */; };
+		9653052A242A27CD004F05EF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC567F2427EA080042522C /* Storage.swift */; };
+		9653052B242A27CE004F05EF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC567F2427EA080042522C /* Storage.swift */; };
 		9677B92024283165000A32F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA1E242047320046D864 /* ContentView.swift */; };
 		9677B92124283166000A32F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA1E242047320046D864 /* ContentView.swift */; };
 		967851992428E2D900B4FDC6 /* MyUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC567D2427D07F0042522C /* MyUtilities.swift */; };
@@ -288,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9677B92024283165000A32F8 /* ContentView.swift in Sources */,
+				9653052A242A27CD004F05EF /* Storage.swift in Sources */,
 				961BBA32242047340046D864 /* MinimalisticMotivationTests.swift in Sources */,
 				967851992428E2D900B4FDC6 /* MyUtilities.swift in Sources */,
 			);
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9677B92124283166000A32F8 /* ContentView.swift in Sources */,
+				9653052B242A27CE004F05EF /* Storage.swift in Sources */,
 				961BBA3D242047340046D864 /* MinimalisticMotivationUITests.swift in Sources */,
 				9678519A2428E2D900B4FDC6 /* MyUtilities.swift in Sources */,
 			);

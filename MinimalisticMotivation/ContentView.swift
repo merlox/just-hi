@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-let utilities = MyUtilities()
+let utilities = MyUtilities(false, false)
 
 struct ContentView: View {
     var body: some View {
@@ -40,7 +40,8 @@ struct ContentView: View {
                     .cornerRadius(20)
             }
             Button(action: {
-                print("Clicked")
+                let stor = Storage()
+                stor.example()
             }) {
                 Text("I don't want to be notified")
                     .padding(.top, 20)
