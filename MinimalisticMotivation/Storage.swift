@@ -37,16 +37,18 @@ class MyData: NSObject, NSCoding {
     }
 }
 
-// Utilities to save and retrieve data
-struct Utilities {
+struct Storage {
+    func getInitialData() -> MyData? {
+        return getData("exampleFile")
+    }
+    
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
     }
     
     // 1
-    func getData() -> MyData? {
-        let fileName = "myUserData"
+    func getData(_ fileName: String) -> MyData? {
         let fullPath = getDocumentsDirectory().appendingPathComponent(fileName)
         do {
             let data = try Data(contentsOf: fullPath)
@@ -54,14 +56,13 @@ struct Utilities {
                 return loadedStrings
             }
         } catch {
-            print("Couldn't read the stored data")
+            print("Couldn't read the stored data", error.localizedDescription)
         }
         return nil
     }
     
     // ObjectToSave is the data we want to save
-    func setData(objectToSave: MyData) -> Bool {
-        let fileName = "myUserData"
+    func setData(_ fileName: String, objectToSave: MyData) -> Bool {
         let fullPath = getDocumentsDirectory().appendingPathComponent(fileName)
         do {
             let data = try NSKeyedArchiver.archivedData(withRootObject: objectToSave, requiringSecureCoding: false)
@@ -72,13 +73,10 @@ struct Utilities {
         }
         return false
     }
-}
-
-struct Storage {
+    
     // The function that executes everything
     func example() {
-        let myUtilities = Utilities()
-        let result = myUtilities.getData() // 1
+        let result = getData("exampleFile") // 1
         
         if result != nil {
             print("A", result?.shownInitialPermissionsMessage ?? "abc")
@@ -87,7 +85,7 @@ struct Storage {
             let myData = MyData(false, false)
             myData.shownInitialPermissionsMessage = true
             myData.notificationsAccepted = true
-            if myUtilities.setData(objectToSave: myData) {
+            if setData("exampleFile", objectToSave: myData) {
                 print("Data saved successfully")
             } else {
                 print("Data NOT saved")

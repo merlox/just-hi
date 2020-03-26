@@ -8,11 +8,25 @@
 
 import SwiftUI
 
-let utilities = MyUtilities(false, false)
+let storage = Storage()
+var myData: MyData? = storage.getInitialData()
+var utilities: MyUtilities? = nil
 
 struct ContentView: View {
     var body: some View {
+        setup()
         return initialScreen()
+    }
+    
+    func setup() {
+        if myData == nil {
+            print("Data not setup")
+            utilities = MyUtilities(false, false)
+        } else {
+            print("Initial data 1", myData?.shownInitialPermissionsMessage ?? "a")
+            print("Initial data 2", myData?.notificationsAccepted ?? "b")
+            utilities = MyUtilities(myData?.shownInitialPermissionsMessage, myData?.notificationsAccepted)
+        }
     }
     
     func initialScreen() -> AnyView {
@@ -30,7 +44,7 @@ struct ContentView: View {
                 .fixedSize(horizontal: false, vertical: true)
             Spacer()
             Button(action: {
-                utilities.askNotificationsPermission()
+                utilities!.askNotificationsPermission()
             }) {
                 Text("Enable notifications")
                     .padding(20)
