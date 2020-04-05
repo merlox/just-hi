@@ -10,23 +10,18 @@ import UserNotifications
 
 class MyUtilities {
     let current = UNUserNotificationCenter.current()
-    var shownInitialPermissionsMessage: Bool
-    var notificationsAccepted: Bool
     
-    init(_ shownInitialPermissionsMessage: Bool?, _ notificationsAccepted: Bool?) {
-        self.shownInitialPermissionsMessage = shownInitialPermissionsMessage ?? false
-        self.notificationsAccepted = notificationsAccepted ?? false
-    }
-    
-    func askNotificationsPermission() {
-        // 1. Ask for permission
+    func askNotificationsPermission(callback: @escaping (Bool) -> Void) {
         current.requestAuthorization(options: [.alert, .sound, .badge]) { (granted: Bool, err: Error?) in
-            self.shownInitialPermissionsMessage = true
             if !granted {
-                self.notificationsAccepted = false
+                print("Notification not granted")
             } else {
-                self.notificationsAccepted = true
+                print("Notification granted")
+                
+                // Immediately start sending the automatic notifications every 8 hours as motivational reminders
+                self.startNotifications()
             }
+            callback(granted)
         }
     }
     
