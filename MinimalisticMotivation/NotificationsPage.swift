@@ -10,7 +10,7 @@ import SwiftUI
 import Foundation
 
 struct NotificationsPage: View {
-    @ObservedObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack {
@@ -55,6 +55,6 @@ struct NotificationsPage: View {
 
 struct NotificationsPage_Previews: PreviewProvider {
     static var previews: some View {
-        NotificationsPage(viewRouter: ViewRouter())
+        NotificationsPage().environmentObject(ViewRouter())
     }
 }

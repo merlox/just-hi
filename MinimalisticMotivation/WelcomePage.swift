@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 struct WelcomePage: View {
-    @ObservedObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         let salutes = [
@@ -53,6 +53,6 @@ struct WelcomePage: View {
 
 struct WelcomePage_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomePage(viewRouter: ViewRouter())
+        WelcomePage().environmentObject(ViewRouter())
     }
 }
