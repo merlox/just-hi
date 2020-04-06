@@ -24,9 +24,9 @@ struct StarterView: View {
     var body: some View {
         VStack {
             if viewRouter.currentPage == "page1" {
-                NotificationsPage()
+                NotificationsPage(viewRouter: viewRouter)
             } else if viewRouter.currentPage == "page2" {
-                WelcomePage()
+                WelcomePage(viewRouter: viewRouter)
             }
         }
     }

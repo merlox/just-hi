@@ -10,6 +10,8 @@ import SwiftUI
 import Foundation
 
 struct NotificationsPage: View {
+    @ObservedObject var viewRouter: ViewRouter
+    
     var body: some View {
         VStack {
             Spacer()
@@ -39,7 +41,7 @@ struct NotificationsPage: View {
             }
             Button(action: {
                 storage.setPageNotificationsState(setAsAccepted: false)
-                currentScreen = AppScreen.welcomeMotivationPage
+                self.viewRouter.currentPage = "page2"
             }) {
                 Text("I don't want to be notified")
                     .padding(.top, 20)
@@ -53,6 +55,6 @@ struct NotificationsPage: View {
 
 struct NotificationsPage_Previews: PreviewProvider {
     static var previews: some View {
-        NotificationsPage()
+        NotificationsPage(viewRouter: ViewRouter())
     }
 }

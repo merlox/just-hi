@@ -10,6 +10,8 @@ import Foundation
 import SwiftUI
 
 struct WelcomePage: View {
+    @ObservedObject var viewRouter: ViewRouter
+    
     var body: some View {
         let salutes = [
             "Have an amazing day today!",
@@ -25,6 +27,7 @@ struct WelcomePage: View {
         let myNumber = Int.random(in: 0..<salutes.count)
         
         return VStack {
+            Spacer()
             Text("Hello")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -33,12 +36,23 @@ struct WelcomePage: View {
             Text(salutes[myNumber])
                 .font(.headline)
                 .multilineTextAlignment(.center)
+            Spacer()
+            Button(action: {
+                self.viewRouter.currentPage = "page1"
+            }) {
+                Text("Go to the notifications page")
+                    .padding(20)
+                    .frame(minWidth: 300)
+                    .background(Color.accentColor)
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+            }
         }
     }
 }
 
 struct WelcomePage_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomePage()
+        WelcomePage(viewRouter: ViewRouter())
     }
 }
