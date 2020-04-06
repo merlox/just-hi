@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9600675F243AABAF00281623 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9600675E243AABAF00281623 /* ViewRouter.swift */; };
 		961BBA1B242047320046D864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA1A242047320046D864 /* AppDelegate.swift */; };
 		961BBA1D242047320046D864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BBA1C242047320046D864 /* SceneDelegate.swift */; };
 		961BBA21242047340046D864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961BBA20242047340046D864 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9600675E243AABAF00281623 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		961BBA17242047320046D864 /* MinimalisticMotivation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimalisticMotivation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		961BBA1A242047320046D864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		961BBA1C242047320046D864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				9684B03924395EB300EA4C2F /* StarterView.swift */,
 				9684B03B2439601000EA4C2F /* NotificationsPage.swift */,
 				9684B03D243961D300EA4C2F /* WelcomePage.swift */,
+				9600675E243AABAF00281623 /* ViewRouter.swift */,
 			);
 			path = MinimalisticMotivation;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				961BBA1D242047320046D864 /* SceneDelegate.swift in Sources */,
 				9684B03E243961D300EA4C2F /* WelcomePage.swift in Sources */,
 				96FC56802427EA080042522C /* Storage.swift in Sources */,
+				9600675F243AABAF00281623 /* ViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

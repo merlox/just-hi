@@ -19,25 +19,26 @@ let storage = Storage()
 let utilities = MyUtilities()
 
 struct StarterView: View {
-    @State var page = "page2"
+    @ObservedObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack {
-            if page == "page1" {
+            if viewRouter.currentPage == "page1" {
                 NotificationsPage()
-            } else {
+            } else if viewRouter.currentPage == "page2" {
                 WelcomePage()
             }
         }
     }
     
-    init() {
+    init(viewRouter: ViewRouter) {
         storage.appFirstStartSetVariables()
+        self.viewRouter = viewRouter
     }
 }
 
 struct StarterView_Previews: PreviewProvider {
     static var previews: some View {
-        StarterView()
+        StarterView(viewRouter: ViewRouter())
     }
 }
